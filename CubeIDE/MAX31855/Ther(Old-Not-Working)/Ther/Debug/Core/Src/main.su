@@ -1,0 +1,9 @@
+../Core/Src/main.c:74:10:read_raw	16	static
+../Core/Src/main.c:94:8:read_thermo	32	static
+../Core/Src/main.c:133:7:read_internal	32	static
+../Core/Src/main.c:156:5:main	88	static
+../Core/Src/main.c:220:6:SystemClock_Config	88	static
+../Core/Src/main.c:267:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:307:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:355:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:397:6:Error_Handler	4	static,ignoring_inline_asm
