@@ -1,0 +1,4 @@
+../Core/Src/mcp3204.c:8:5:MCP3204_convert	48	static
+../Core/Src/mcp3204.c:73:10:MCP3204_getValue	16	static
+../Core/Src/mcp3204.c:81:7:MCP3204_analogValue	16	static
+../Core/Src/mcp3204.c:86:6:test_LED	8	static

@@ -1,0 +1,8 @@
+../Library/MAX31855/MAX31855.c:33:6:MAX31855_Init	24	static
+../Library/MAX31855/MAX31855.c:40:9:MAX31855_GetFault	16	static
+../Library/MAX31855/MAX31855.c:60:7:MAX31855_GetTemperature	16	static
+../Library/MAX31855/MAX31855.c:64:7:MAX31855_GeInternalTemperature	16	static
+../Library/MAX31855/MAX31855.c:68:7:MAX31855_GetTemperatureInFahrenheit	24	static
+../Library/MAX31855/MAX31855.c:75:7:MAX31855_GeInternalTemperatureInFahrenheit	24	static
+../Library/MAX31855/MAX31855.c:82:6:MAX31855_ReadData	32	static
+../Library/MAX31855/MAX31855.c:148:6:MAX31855_SetNSSState	16	static
