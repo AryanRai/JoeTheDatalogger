@@ -28,10 +28,27 @@ A high-performance real-time Data Acquisition and Logging unit designed specific
     ```
   [Chyappy]("https://github.com/AryanRai/chyappy")
 
-- **LoRa Wireless** (Coming soon)
+- **LoRa SX1278**
   - Long-range wireless communication
-  - Frequency band: TBD
-  - Range: TBD
+  - Frequency: 433MHz
+  - Spreading Factor: 7-12 (configurable)
+  - Bandwidth: 125kHz
+  - Coding Rate: 4/5
+  - Maximum Range: ~10km (line of sight)
+  - Transmit Power: up to +20dBm
+
+### Inertial Measurement
+- **MPU6050 6-DOF IMU**
+  - 3-axis accelerometer
+    - Range: ±2g, ±4g, ±8g, ±16g
+    - 16-bit resolution
+  - 3-axis gyroscope
+    - Range: ±250, ±500, ±1000, ±2000°/s
+    - 16-bit resolution
+  - Digital Motion Processor (DMP)
+  - Temperature sensor
+  - I2C interface
+  - Update rate: up to 1kHz
 
 ### Data Storage
 - **NAND Flash** (Coming soon)
@@ -104,12 +121,75 @@ The RS485 communication uses a custom packet protocol (chYappy v1):
    ```
 4. Build and flash to your STM32L4 device
 
+## Testing & Flight Computer Conversion
+
+### Hardware Testing Requirements
+- **MPU6050 IMU Testing**
+  - Accelerometer calibration and testing
+    - Zero-g offset calibration
+    - Scale factor verification
+    - Cross-axis alignment
+  - Gyroscope calibration and testing
+    - Zero-rate offset calibration
+    - Sensitivity verification
+    - Angular random walk measurement
+  - Temperature compensation testing
+  - DMP functionality verification
+  - Sensor fusion accuracy testing
+
+- **LoRa SX1278 Testing**
+  - Range testing at different spreading factors
+  - Interference resistance verification
+  - Power consumption measurement
+  - Link quality assessment
+  - Packet loss rate testing
+  - Maximum throughput testing
+
+### Flight Computer Features
+- [ ] Add BMP388 barometric pressure sensor
+- [x] Integrate MPU6050 6-DOF IMU
+- [ ] Implement dual deployment capability
+- [ ] Add pyro channel continuity checking
+- [ ] Create state machine for flight phases:
+  - Pre-flight checks
+  - Launch detection (using MPU6050 acceleration threshold)
+  - Coast phase tracking
+  - Apogee detection
+  - Descent phases
+  - Landing detection
+- [x] LoRa telemetry implementation
+
+### Data Analysis
+- [ ] Real-time flight state estimation
+- [ ] Kalman filter implementation
+- [ ] Post-flight data analysis tools
+- [ ] Flight profile reconstruction
+- [ ] Performance metrics calculation
+
+### Safety Features
+- [ ] Multiple redundant sensors
+- [ ] Watchdog timer implementation
+- [ ] Power system monitoring
+- [ ] Safe state fallbacks
+- [ ] Ground testing mode
+
+### Ground Support
+- [ ] Pre-flight checklist system
+- [ ] Ground station software
+- [ ] Real-time telemetry display
+- [ ] Mission control interface
+
 ## Future Enhancements
 - [ ] LoRa wireless integration
 - [ ] NAND Flash storage implementation
 - [ ] SD Card support
 - [ ] IMU
 - [ ] Convert to Flight Computer
+- [ ] Flight simulation mode
+- [ ] Weather condition monitoring
+- [ ] Mission abort capability
+- [ ] Recovery beacon integration
+- [ ] Flight path prediction
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
