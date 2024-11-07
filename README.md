@@ -1,7 +1,32 @@
 # JoeTheDatalogger
 
-A high-performance real-time Data Acquisition and Logging unit designed specifically for High Powered Rockets. The system provides robust sensor data collection, real-time transmission capabilities, and redundant data storage options.
+**JoeTheDatalogger** A high-performance real-time Data Acquisition and Logging unit designed specifically for High Powered Rockets. The system provides robust sensor data collection, real-time transmission capabilities, and redundant data storage options. This system collects and storesand transmits data just before the lauch from the rocket on the pad to the padbox which in turn transmits to groundstation. 
 
+### Key Features:
+- **Advanced Sensor Integration**: 
+  - Supports high-precision temperature measurements using the **MAX31855 thermocouple**, with cold-junction compensation and fault detection.
+  - Monitors pressure using the **MCP3204 ADC** for reliable pressure transducer readings with 12-bit resolution.
+  
+- **Real-time Communication**: 
+  - Uses **RS485** for wired communication with a custom protocol, ensuring reliable data transfer.
+  - Integrates **LoRa SX1278** for long-range, wireless communication, capable of transmitting data over distances up to 10 km.
+
+- **Inertial Measurement**: 
+  - Equipped with an **MPU6050 6-DOF IMU**, providing high-fidelity motion data through a 3-axis accelerometer and 3-axis gyroscope, with real-time update rates of up to 1 kHz.
+
+- **Data Storage Options**: 
+  - Planned support for **NAND Flash** and **SD Card** storage, offering flexible and high-speed options for data retention during missions.
+
+### Hardware and Software:
+- **Core Hardware**: Based on the **STM32L4** series MCU, the system operates at 3.3V with a clock speed of 32 MHz, featuring efficient power consumption and processing capability.
+- **Sensor Handling**: Offers independent control and configurable sampling rates for each sensor, with automatic fault detection and status monitoring.
+
+### Future Enhancements:
+- Integration of **LoRa wireless communication** for remote telemetry.
+- Full support for **SD Cards** and **NAND Flash** for expanded storage capabilities.
+- Conversion of the system into a full-fledged **Flight Computer** for enhanced rocket flight control.
+
+This system is the ideal companion for rocketry teams needing reliable data collection and transmission during critical flight stages.
 ## Features
 
 ### Sensor Integration
