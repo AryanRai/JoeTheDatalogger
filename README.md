@@ -146,38 +146,10 @@ The RS485 communication uses a custom packet protocol (chYappy v1):
   - Maximum throughput testing
 
 ### Flight Computer Features
-- [ ] Add BMP388 barometric pressure sensor
 - [x] Integrate MPU6050 6-DOF IMU
-- [ ] Implement dual deployment capability
-- [ ] Add pyro channel continuity checking
-- [ ] Create state machine for flight phases:
-  - Pre-flight checks
-  - Launch detection (using MPU6050 acceleration threshold)
-  - Coast phase tracking
-  - Apogee detection
-  - Descent phases
-  - Landing detection
 - [x] LoRa telemetry implementation
 
-### Data Analysis
-- [ ] Real-time flight state estimation
-- [ ] Kalman filter implementation
-- [ ] Post-flight data analysis tools
-- [ ] Flight profile reconstruction
-- [ ] Performance metrics calculation
 
-### Safety Features
-- [ ] Multiple redundant sensors
-- [ ] Watchdog timer implementation
-- [ ] Power system monitoring
-- [ ] Safe state fallbacks
-- [ ] Ground testing mode
-
-### Ground Support
-- [ ] Pre-flight checklist system
-- [ ] Ground station software
-- [ ] Real-time telemetry display
-- [ ] Mission control interface
 
 ## Future Enhancements
 - [ ] LoRa wireless integration
@@ -185,11 +157,6 @@ The RS485 communication uses a custom packet protocol (chYappy v1):
 - [ ] SD Card support
 - [ ] IMU
 - [ ] Convert to Flight Computer
-- [ ] Flight simulation mode
-- [ ] Weather condition monitoring
-- [ ] Mission abort capability
-- [ ] Recovery beacon integration
-- [ ] Flight path prediction
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
