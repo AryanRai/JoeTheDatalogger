@@ -107,8 +107,8 @@ The RS485 communication uses a custom packet protocol (chYappy v1):
 - [ ] LoRa wireless integration
 - [ ] NAND Flash storage implementation
 - [ ] SD Card support
-- [ ] Web interface for configuration
-- [ ] Data visualization tools
+- [ ] IMU
+- [ ] Convert to Flight Computer
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
