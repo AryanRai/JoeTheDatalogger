@@ -5,6 +5,7 @@
 ![image](https://github.com/user-attachments/assets/9e66b06c-809b-444b-8ce0-a5704d91373a)
 
 
+
 ### Key Features:
 - **Advanced Sensor Integration**: 
   - Supports high-precision temperature measurements using the **MAX31855 thermocouple**, with cold-junction compensation and fault detection.
@@ -13,6 +14,8 @@
 - **Real-time Communication**: 
   - Uses **RS485** for wired communication with a custom protocol, ensuring reliable data transfer.
   - Integrates **LoRa SX1278** for long-range, wireless communication, capable of transmitting data over distances up to 10 km.
+
+ [Comminication Demo](https://photos.app.goo.gl/uNqSVBL51DeGpGSW6)
 
 - **Inertial Measurement**: 
   - Equipped with an **MPU6050 6-DOF IMU**, providing high-fidelity motion data through a 3-axis accelerometer and 3-axis gyroscope, with real-time update rates of up to 1 kHz.
@@ -54,7 +57,7 @@ This system is the ideal companion for rocketry teams needing reliable data coll
     ```
     | Start (1B) | Length (1B) | Type (1B) | ID (1B) | Payload (NB) | Checksum (1B) |
     ```
-  [Chyappy]("https://github.com/AryanRai/chyappy")
+  [Chyappy](https://github.com/AryanRai/chyappy)
 
 - **LoRa SX1278**
   - Long-range wireless communication
