@@ -26,6 +26,7 @@ A high-performance real-time Data Acquisition and Logging unit designed specific
     ```
     | Start (1B) | Length (1B) | Type (1B) | ID (1B) | Payload (NB) | Checksum (1B) |
     ```
+  [Chyappy]("https://github.com/AryanRai/chyappy")
 
 - **LoRa Wireless** (Coming soon)
   - Long-range wireless communication
