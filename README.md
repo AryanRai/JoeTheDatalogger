@@ -2,6 +2,9 @@
 
 **JoeTheDatalogger** A high-performance real-time Data Acquisition and Logging unit designed specifically for High Powered Rockets. The system provides robust sensor data collection, real-time transmission capabilities, and redundant data storage options. This system collects and storesand transmits data just before the lauch from the rocket on the pad to the padbox which in turn transmits to groundstation. 
 
+![image](https://github.com/user-attachments/assets/9e66b06c-809b-444b-8ce0-a5704d91373a)
+
+
 ### Key Features:
 - **Advanced Sensor Integration**: 
   - Supports high-precision temperature measurements using the **MAX31855 thermocouple**, with cold-junction compensation and fault detection.
